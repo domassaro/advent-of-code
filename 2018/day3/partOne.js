@@ -1,5 +1,10 @@
-const overlap = (input) => {
-    let claims = input.split('\n').map(x => x.trim());
+const overlap = () => {
+    let fs = require('fs'),
+      path = require('path'),    
+      filePath = path.join(__dirname, 'input.txt');
+    let inputText = fs.readFileSync(filePath, {encoding: 'utf-8'});
+    
+    let claims = inputText.split('\n').map(x => x.trim());
     let grid = {};
   
     for (let a = 0; a < claims.length; a++) {
