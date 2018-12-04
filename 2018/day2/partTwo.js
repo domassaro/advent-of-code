@@ -21,3 +21,5 @@ for (let i = 0; i < boxIds.length; i++) {
 		}
 	}
 }
+
+module.exports = checksumTwo;

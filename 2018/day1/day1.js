@@ -25,3 +25,5 @@ while (!found) {
         break;
     }
 }
+
+module.exports = calibrate;
